@@ -3,7 +3,7 @@ ENV APP /app
 RUN mkdir $APP
 WORKDIR $APP
 
-COPY *.py .
+COPY *.py /
 COPY requirements.txt .
 
 RUN pip install -r requirements.txt
